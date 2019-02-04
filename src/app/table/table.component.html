@@ -1,0 +1,21 @@
+<br/><br/>
+<h1>Table</h1>
+<br/><br/>
+<button class="btn" (click)="getdata()">Show Data</button> <br/><br/>
+<div class="table-responsive">
+  <table>
+    <thead>
+      <th> Bike Brand </th>
+      <th> Bike Model </th>
+      <th> Bike Engine Type </th>
+    </thead>
+    <br/><br/>
+      <tbody>
+        <tr *ngFor="let data of bike ">
+          <td> {{ data.bikeBrand }} </td>
+          <td> {{ data.bikeModel }} </td>
+          <td> {{ data.bikeNumber }} </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
